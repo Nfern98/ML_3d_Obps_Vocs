@@ -48,16 +48,16 @@ Para utilizar los códigos de este estudio, se debe ejecutar de la siguiente man
 
 1. **Paso 1**:
 
-Descargar el archivo [ML_IOBPdb_obps_covs.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_IOBPdb_obps_covs.ipynb) para ejecutar todas las etapas en un solo entorno de Jupyter.
+Descargar el archivo [Datos.ipynb](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/Datos.ipynb) para ejecutar todas las etapas en un solo entorno de Jupyter.
 
 2. **Paso 2**:
 
-Descargar el archivo [ML_IOBPdb_obps_covs.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_IOBPdb_obps_covs.ipynb) para ejecutar todas las etapas en un solo entorno de Jupyter.
+Descargar el archivo [ML_Docking.ipynb](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/ML_Docking.ipynb) para ejecutar todas las etapas en un solo entorno de Jupyter.
 
 3. **Paso 3**
 
-Ejecutar el archivo [Datos.ipynb]() para obtener el dataset.
+Ejecutar el archivo [Datos.ipynb](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/Datos.ipynb) para obtener el dataset.
 
 4. **Paso 4**
 
-Ejecutar el archivo [ML_Docking]() para realizar aprendizaje automatico.
+Ejecutar el archivo [ML_Docking](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/ML_Docking.ipynb) para realizar aprendizaje automatico.
