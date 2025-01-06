@@ -56,7 +56,7 @@ Descargar el archivo [ML_Docking.ipynb](https://github.com/Nfern98/ML_3d_Obps_Vo
 
 3. **Paso 3**
 
-Ejecutar el archivo [Datos.ipynb](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/Datos.ipynb) para obtener el dataset.
+Ejecutar el archivo [Datos.ipynb](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/Datos.ipynb) para crear el dataset.
 
 4. **Paso 4**
 
