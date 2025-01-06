@@ -1,8 +1,8 @@
 # ML_obps_vocs
 
-El enfoque utilizado en este trabajo es buscar descriptores de proteínas que se unen a los odorantes (secuencias de aminoácidos) y compuestos orgánicos volátiles (SMILES) para predecir el valor de afinidad de unión proteína-ligando con modelos de aprendizaje automático de regresión.
+El enfoque principal de este trabajo es la obtencion de descriptores a partir de estructuras 3D de las proteinas odorantes, compuestos organicos volatiles y docking molecular, con el fin de predecir la afinidad de union vinculante (Ki) a travez del aprendizaje automatico.
 
-![Figure](https://github.com/Glarah453/ML_obps_vocs/blob/main/figures/Esquema%20de%20Flujo%20de%20trabajo.jpg)
+![Figure](https://github.com/Nfern98/ML_3d_Obps_Vocs/blob/main/workflow/workflow2.jpg)
 
 # Instalación
 
@@ -15,12 +15,19 @@ Para ejecutar los códigos, se debe instalar las siguientes librerias:
 
 
 *   [Python 3.9.2 <=](https://www.python.org/downloads/)
+*   [Miniconda (Python 3.7)](https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh)
 *   [Pandas 2.2.x](https://pandas.pydata.org/docs/getting_started/install.html)
 *   [Numpy 1.26.x](https://numpy.org/install/)
 *   [Matplotlib 3.7.x](https://matplotlib.org/3.7.0/)
 *   [Scipy 1.10.x](https://scipy.org/install/)
 *   [Joblib 1.2.x](https://joblib.readthedocs.io/en/stable/installing.html)
-*   [Padelpy 0.1.x](https://pypi.org/project/padelpy/)
+*   [Openbabel](https://pypi.org/project/openbabel/)
+*   [Pybel](https://open-babel.readthedocs.io/en/latest/UseTheLibrary/Python_Pybel.html)
+*   [Mordred](https://github.com/mordred-descriptor/mordred)
+*   [OpenMM](https://github.com/openmm/)
+*   [PyBioMed](https://github.com/gadsbyfly/PyBioMed)
+*   [PDBFixer](https://github.com/openmm/pdbfixer.git)
+*   [Py3dMol 2.4.2](https://pypi.org/project/py3Dmol/)
 *   [Propy 1.1.x](https://pypi.org/project/propy3/)
 *   [Rdkit 2022.09.x](https://www.rdkit.org/docs/Install.html)
 *   [Openpyxl 3.1.x](https://openpyxl.readthedocs.io/en/stable/tutorial.html)
@@ -29,25 +36,28 @@ Para ejecutar los códigos, se debe instalar las siguientes librerias:
 *   [Xgboost 2.1.1 <=](https://xgboost.readthedocs.io/en/latest/install.html)
 *   [Lightgbm 4.5.x](https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html)
 
+Instalacion de herramientas
+*   [MglTools 1.5.7](https://ccsb.scripps.edu/download/532/)
+*   [Smina](https://downloads.sourceforge.net/project/smina/smina.static)
+
+
 
 # Uso
 
-Para utilizar los códigos de este estudio, se puede ejecutar de dos maneras:
+Para utilizar los códigos de este estudio, se debe ejecutar de la siguiente manera:
 
-1. **Opción 1**:
+1. **Paso 1**:
 
 Descargar el archivo [ML_IOBPdb_obps_covs.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_IOBPdb_obps_covs.ipynb) para ejecutar todas las etapas en un solo entorno de Jupyter.
 
-2. **Opción 2**:
+2. **Paso 2**:
 
-Descargar los siguientes archivos "ipynb" para ejecutar las etapas por separado en distintos entornos Jupyter:
+Descargar el archivo [ML_IOBPdb_obps_covs.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_IOBPdb_obps_covs.ipynb) para ejecutar todas las etapas en un solo entorno de Jupyter.
 
-* Recolección y filtrado de datos [ML_obps_covs - Etapa 1.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_obps_covs%20-%20Etapa%201.ipynb). 
+3. **Paso 3**
 
-* Búsqueda de descriptores y creación de dataset [ML_obps_covs - Etapa 2 y 3.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_obps_covs%20-%20Etapa%202%20y%203.ipynb). 
+Ejecutar el archivo [Datos.ipynb]() para obtener el dataset.
 
-* Preprocesamiento, normalización y optimización de hiperparámetros para cada modelo. verificar los archivos "ipynb" de cada modelo en la carpeta [Opt for Models](https://github.com/Glarah453/ML_obps_vocs/tree/main/Opt%20for%20Models).
+4. **Paso 4**
 
-* Resultados de los mejores hiperparámetros de cada modelo [ML_obps_covs - Etapa 4 y 5.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_obps_covs%20-%20Etapa%204%2C%205.ipynb).
-
-* Evaluación de predicciones de cada modelo [ML_obps_covs - Etapa 6.ipynb](https://github.com/Glarah453/ML_obps_vocs/blob/main/ML_obps_covs%20-%20Etapa%206.ipynb).
+Ejecutar el archivo [ML_Docking]() para realizar aprendizaje automatico.
