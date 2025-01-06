@@ -1,4 +1,4 @@
-# ML_obps_vocs
+# ML_3d_Obps_Vocs
 
 El enfoque principal de este trabajo es la obtencion de descriptores a partir de estructuras 3D de las proteinas odorantes, compuestos organicos volatiles y docking molecular, con el fin de predecir la afinidad de union vinculante (Ki) a travez del aprendizaje automatico.
 
